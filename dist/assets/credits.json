@@ -54,5 +54,44 @@
     "license_file": "Manrope-OFL.txt",
     "copyright": "The Manrope Project Authors",
     "description": "Manrope variable font, including Cyrillic. Converted from official Google Fonts TTF into WOFF2 without subsetting."
+  },
+  "diagnostic-scenes.svg": {
+    "type": "original vector illustration sprite",
+    "creator": "VetAtlas website design",
+    "description": "21 оригинальная условная учебная сцена методов ветеринарной диагностики. Отдельные символы 400×260. Не клинические снимки и не инструкция для самостоятельного выполнения процедур.",
+    "symbols": [
+      "history",
+      "exam",
+      "flea-comb",
+      "scraping",
+      "microscope",
+      "cytology",
+      "biopsy",
+      "blood",
+      "urine",
+      "hormone",
+      "ultrasound",
+      "eye",
+      "allergy-test",
+      "elimination",
+      "culture",
+      "imaging",
+      "monitor",
+      "triage",
+      "palpation",
+      "hair",
+      "wood-lamp"
+    ]
+  },
+  "diagnostic-lab.webp": {
+    "type": "AI-generated editorial illustration",
+    "creator": "OpenAI image generation",
+    "description": "Акварельная иллюстрация ветеринарного диагностического лабораторного стола.",
+    "source": "Создано специально для VetAtlas, 2 ноября 2026.",
+    "original": "/workspace/generated_images/exec-3fedddea-516e-4d9a-a5bd-9007b21b64b9.png"
+  },
+  "diagnostics/": {
+    "type": "original illustrated diagnostic sequences",
+    "description": "22 алгоритма, 120 рисунков этапов и 22 общие схемы. Учебные векторные иллюстрации, не клинические фотографии."
   }
 }
