@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#234c40"><meta name="description" content="ВетАтлас — учебная платформа по ветеринарной дерматологии. 22 темы, наглядные схемы и тесты с объяснениями для студентов.">
+<title>ВетАтлас — ветеринарная дерматология</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">К содержанию</a>
+<header class="site-header"><div class="container header-inner">
+<a href="#/" class="brand" aria-label="ВетАтлас — на главную"><img src="assets/favicon.svg" width="38" height="38" alt=""><span>вет<span class="brand-accent">атлас</span><small>УЧЕБНАЯ ПЛАТФОРМА</small></span></a>
+<nav class="main-nav" aria-label="Основная навигация"><a href="#/" data-nav="home">Главная</a><a href="#/diseases" data-nav="diseases">Заболевания</a><a href="#/tests" data-nav="tests">Тестирование</a><a href="#/progress" data-nav="progress">Мой прогресс</a></nav>
+<div class="header-actions"><button class="icon-button" data-action="search" aria-label="Поиск по заболеваниям" title="Поиск по заболеваниям"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></button><a href="#/diseases?favorite=1" class="icon-button bookmark-head" aria-label="Избранные материалы" title="Избранные материалы"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4h12v17l-6-4-6 4z"/></svg><span id="favorite-count" hidden></span></a><button class="mobile-toggle icon-button" data-action="menu" aria-label="Открыть меню" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+</div></header>
+<main id="main" tabindex="-1"></main>
+<footer class="site-footer"><div class="container"><div class="footer-top"><a href="#/" class="brand"><img src="assets/favicon.svg" width="34" height="34" alt=""><span>вет<span class="brand-accent">атлас</span><small>ОТ ТЕОРИИ К КЛИНИЧЕСКОМУ МЫШЛЕНИЮ</small></span></a><div class="footer-links"><a href="#/about">О платформе и источниках</a><a href="#/glossary">Словарь терминов</a><a href="downloads/vetatlas.zip" data-action="download-site" download>Скачать сайт <span aria-hidden="true">↗</span></a></div></div><div class="footer-bottom"><p>Учебные материалы для студентов ветеринарных специальностей. Диагноз и лечение определяет ветеринарный врач.</p><span>ВетАтлас · 2026</span></div></div></footer>
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><div class="dialog-heading"><h2 id="search-title">Найти заболевание</h2><button class="icon-button" data-action="close-search" aria-label="Закрыть поиск">✕</button></div><label class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="global-search" type="search" placeholder="Название, симптом или метод диагностики…" autocomplete="off"></label><div id="search-results"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,0 +1,58 @@
+{
+  "hero.webp": {
+    "type": "AI-generated editorial illustration",
+    "creator": "OpenAI image generation",
+    "description": "Ветеринар осматривает шерсть золотистого ретривера в светлой клинике. Сгенерированное изображение, не клинический случай.",
+    "source": "Создано специально для VetAtlas, 2 ноября 2026."
+  },
+  "immune.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "other.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "allergy.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "oncology.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "parasite.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "endocrine.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "favicon.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальный знак VetAtlas."
+  },
+  "environment.svg": {
+    "type": "original vector illustration",
+    "creator": "VetAtlas website design",
+    "description": "Оригинальная учебная векторная схема. Масштаб и формы условные."
+  },
+  "Manrope.woff2": {
+    "type": "font",
+    "family": "Manrope",
+    "weights": "200–800 variable",
+    "source": "https://github.com/google/fonts/tree/main/ofl/manrope",
+    "license": "SIL Open Font License 1.1",
+    "license_file": "Manrope-OFL.txt",
+    "copyright": "The Manrope Project Authors",
+    "description": "Manrope variable font, including Cyrillic. Converted from official Google Fonts TTF into WOFF2 without subsetting."
+  }
+}
