@@ -32,9 +32,9 @@ export default {async fetch(request,env,ctx){
  }catch(error){console.error('Request failure:',error instanceof Error?error.message:'unknown');return secure(new Response('Сервис временно недоступен. Попробуйте позже.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8','Cache-Control':'no-store'}}));}
 }};
 `;
-const output=path.join(root,'dist');await rm(output,{recursive:true,force:true});await mkdir(path.join(output,'server'),{recursive:true});await mkdir(path.join(output,'.openai'),{recursive:true});await mkdir(path.join(output,'migrations'),{recursive:true});
+const output=path.join(root,'dist');await rm(output,{recursive:true,force:true});await mkdir(path.join(output,'server'),{recursive:true});await mkdir(path.join(output,'.openai'),{recursive:true});await mkdir(path.join(output,'drizzle'),{recursive:true});
 await writeFile(path.join(output,'server/index.js'),'const ASSETS='+JSON.stringify(assetMap)+';\n'+api+'\n'+runtime);
 await writeFile(path.join(output,'.openai/hosting.json'),JSON.stringify(manifest,null,2));
-for(const f of await walk(path.join(root,'migrations')))await copyFile(f,path.join(output,'migrations',path.basename(f)));
-await writeFile(path.join(output,'server/wrangler.json'),JSON.stringify({name:'vetatlas',main:'index.js',compatibility_date:'2026-08-06',d1_databases:[{binding:'DB',database_name:'vetatlas-students',database_id:'00000000-0000-0000-0000-000000000000',migrations_dir:'../migrations'}]},null,2));
+for(const f of await walk(path.join(root,'drizzle'))){const target=path.join(output,'drizzle',path.relative(path.join(root,'drizzle'),f));await mkdir(path.dirname(target),{recursive:true});await copyFile(f,target);}
+await writeFile(path.join(output,'server/wrangler.json'),JSON.stringify({name:'vetatlas',main:'index.js',compatibility_date:'2026-08-06',d1_databases:[{binding:'DB',database_name:'vetatlas-students',database_id:'00000000-0000-0000-0000-000000000000',migrations_dir:'../../drizzle'}]},null,2));
 console.log(JSON.stringify({assets:files.length,workerBytes:(await readFile(path.join(output,'server/index.js'))).length,project:manifest.project_id}));

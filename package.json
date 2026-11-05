@@ -5,6 +5,11 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node work/qa/verify.cjs && node work/qa/diagnostic-independent.cjs && node work/qa/practice-ui.test.cjs && node --test work/qa/account-api.test.mjs"
+    "test": "node --test tests/account-api.test.mjs",
+    "db:generate": "drizzle-kit generate"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.11",
+    "drizzle-orm": "^0.45.4"
   }
 }

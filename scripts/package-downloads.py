@@ -4,8 +4,8 @@ root=Path(__file__).resolve().parent.parent;p=root/'public';paths=sorted(str(f.r
 with zipfile.ZipFile(p/'downloads/vetatlas.zip','w',zipfile.ZIP_DEFLATED) as z:
  for name in paths:z.write(p/name,name)
 with zipfile.ZipFile(p/'downloads/vetatlas-server.zip','w',zipfile.ZIP_DEFLATED) as z:
- for folder in ['public','worker','scripts','migrations','.openai']:
+ for folder in ['public','worker','scripts','db','drizzle','tests','.openai']:
   for f in sorted((root/folder).rglob('*')):
    if f.is_file() and f.name not in ['vetatlas.zip','vetatlas-server.zip']:z.write(f,f.relative_to(root))
- for name in ['package.json','README.md','.gitignore']:z.write(root/name,name)
+ for name in ['package.json','package-lock.json','drizzle.config.ts','README.md','.gitignore']:z.write(root/name,name)
 print('Packaged static learning copy and full Worker source')
