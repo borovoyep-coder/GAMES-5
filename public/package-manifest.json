@@ -1,6 +1,8 @@
 [
   "README.md",
   "_headers",
+  "account.css",
+  "account.js",
   "app.js",
   "assets/Manrope-OFL.txt",
   "assets/Manrope.woff2",
@@ -158,10 +160,17 @@
   "assets/oncology.svg",
   "assets/other.svg",
   "assets/parasite.svg",
+  "boot.js",
   "data.js",
   "diagnostics.js",
   "downloads/original.docx",
+  "exercises.js",
   "index.html",
+  "manifest.webmanifest",
+  "offline-assets.json",
+  "practice.css",
+  "practice.js",
   "style.css",
+  "sw.js",
   "package-manifest.json"
 ]

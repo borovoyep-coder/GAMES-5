@@ -1,0 +1,10 @@
+{
+  "name": "vetatlas",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node work/qa/verify.cjs && node work/qa/diagnostic-independent.cjs && node work/qa/practice-ui.test.cjs && node --test work/qa/account-api.test.mjs"
+  }
+}
